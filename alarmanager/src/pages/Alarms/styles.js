@@ -4,22 +4,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 20,
-        paddingTop: 20,
-    },
-
-    header: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-    },
-
-    headerText: {
-        fontSize: 15,
-        color: 'black'
-    },
-
-    headerTextBold: {
-        fontWeight: 'bold'
+        backgroundColor: 'white'
     },
 
     title: {
@@ -27,42 +12,33 @@ export default StyleSheet.create({
         marginBottom: 16,
         marginTop: 38,
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
 
     description: {
-        fontSize: 16,
+        fontSize: 14,
         lineHeight: 24,
-        color: 'black'
+        color: 'black',
+        textAlign: 'center'
     },
 
     alarmList: {
-        marginTop: 32
-    },
-
-    alarm: {
-        padding: 24,
-        borderRadius: 8,
-        backgroundColor: '#FFF',
-        marginBottom: 16
+        marginTop: 24,
+        padding: 12,
+        borderRadius: 8
     },
 
     alarmProperty: {
         fontSize: 14,
-        color: '#41414d',
+        paddingBottom: 10,
+        color: '#fff',
         fontWeight: 'bold'
     },
 
-    alarmValue: {
-        marginTop: 8,
-        fontSize: 15,
-        marginBottom: 24,
-        color: '#737380'
-    },
-
     detailsButtonText: {
-        color: '#41414d',
-        fontSize: 15,
+        color: '#FFF',
+        fontSize: 16,
         fontWeight: 'bold'
     }
 });

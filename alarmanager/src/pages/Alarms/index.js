@@ -1,54 +1,80 @@
-import React from 'react';
-import {useNavigation} from '@react-navigation/native';
+import React, {useEffect, useState} from 'react';
 import {View, FlatList, Text, TouchableOpacity} from 'react-native';
-
-// import api from '../../services/api'; 
+import axios from 'axios';
 
 import styles from './styles';
 
-export default function Alarms() {
-    const navigation = useNavigation();
+const stylesAlarm = [
+      {
+        name: 'Normal',
+        text_color: '#fff',
+        background_color: '#0f0',
+        priority: 0
+      },
+      {
+        name: 'Level 1',
+        text_color: '#fff',
+        background_color: '#c00',
+        priority: 1
+      },
+      {
+        name: 'Level 2',
+        text_color: '#fff',
+        background_color: '#a0a000',
+        priority: 2
+      },
+      {
+        name: 'Level 3',
+        text_color: '#fff',
+        background_color: '#d7d700',
+        priority: 3
+      }
+]
 
-    function navigateToDetail() {
-        navigation.navigate('Detail');
+export default function Alarms({navigation}) {
+
+    const [dataAlarm, setDataAlarm] = useState('')
+
+    useEffect(() => {
+        axios.get('https://run.mocky.io/v3/84a532b2-5206-4ae6-a6f5-7153484ece16') 
+            .then(function (response) {
+                // handle success
+                console.log(response.data);
+                setDataAlarm(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+    },[])
+
+    function renderItem({item}) {
+
+        return (
+            <View style={[styles.alarmList, {backgroundColor: stylesAlarm[item.id_priority].background_color}]}>
+                <Text style={styles.alarmProperty}>Alarme: {item.alarm_name}</Text>
+
+                <Text style={styles.alarmProperty}>Início: {item.start}</Text>
+
+                <Text style={styles.alarmProperty}>Fim: {item.end}</Text>
+
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('Detail', {post:item})}
+                >
+                    <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
+                </TouchableOpacity>
+            </View>
+        )   
     }
 
     return (
         <View style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.headerText}>
-                    Alarmanager
-                </Text>
-
-                <Text style={styles.headerText}>
-                    Total de <Text style={styles.headerTextBold}>0 alarmes</Text>.
-                </Text>
-            </View>
-
             <Text style={styles.title}>Bem-vindo!</Text>
-            <Text style={styles.description}>Escolha um dos alarmes abaixo.</Text>
+            <Text style={styles.description}>Escolha um dos alarmes abaixo e visualize o seu gráfico.</Text>
 
-            <FlatList 
-                data={[1, 2, 3]}
-                style={styles.alarmList}
-                keyExtractor={alarm => String(alarm)}
-                showsVerticalScrollIndicator={false}
-                renderItem={() => (
-                    <View style={styles.alarm}>
-                    <Text style={styles.alarmProperty}>Alarme:</Text>
-                    <Text style={styles.alarmValue}>Challenge Mobile</Text>
-
-                    <Text style={styles.alarmProperty}>Início:</Text>
-                    <Text style={styles.alarmValue}>14:00</Text>
-
-                    <Text style={styles.alarmProperty}>Fim:</Text>
-                    <Text style={styles.alarmValue}>23:00</Text> 
-
-                    <TouchableOpacity onPress={navigateToDetail}>
-                        <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
-                    </TouchableOpacity>
-                </View>
-                )}
+            <FlatList  
+                data = {dataAlarm}
+                renderItem={renderItem}
             />
         </View>
     );

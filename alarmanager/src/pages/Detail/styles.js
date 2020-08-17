@@ -3,40 +3,30 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        paddingHorizontal: 24,
-        paddingTop: 20
+        paddingHorizontal: 20,
+        paddingTop: 20,
+        backgroundColor: 'white'
     },
 
     header: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'flex-start'
     },
 
-    alarm: {
-        padding: 24,
-        borderRadius: 8,
-        backgroundColor: '#FFF',
-        marginTop: 32,
-        marginBottom: 16 
+    back: {
+        fontSize: 16,
+        fontWeight: 'bold'
+    },
+
+    alarmList: {
+        marginTop: 24,
+        marginBottom: 24,
+        borderRadius: 8
     },
 
     alarmProperty: {
-        fontSize: 14,
-        color: '#41414d',
-        fontWeight: 'bold',
-        marginTop: 24
-    },
-
-    alarmValue: {
-        marginTop: 8,
-        fontSize: 15,
-        color: '#737380'
-    },
-
-    graphic: {
-        padding: 24,
-        borderRadius: 8,
-        backgroundColor: '#FFF'
+        fontSize: 16,
+        paddingBottom: 10,
+        color: 'black',
+        textAlign: 'center'
     },
 });
