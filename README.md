@@ -26,11 +26,27 @@ Este projeto faz parte do processo seletivo da Telcomanager, que consiste em des
 
 ---
 
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
 ## 🚀 Como executar o projeto
 
 Rodando a aplicação mobile
 
 ```bash
+
+# Abra o VSCode e pressione Ctrl + Shift + P
+
+# Selecione a opção Git:Clone
+
+# Faça um clone do repositório abaixo
+https://github.com/manorecarlos/challenge-telcomanager.git
+
+# Acesse a pasta alarmanager
+cd challenge-telcomanager\alarmanager
 
 # Instale as dependências
 $ npm install
