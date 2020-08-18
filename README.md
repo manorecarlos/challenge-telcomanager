@@ -7,7 +7,7 @@
 </h3>
 
 <h4 align="center">
-	🚧   Concluído 🚀 🚧
+	   Concluído 🚀 
 </h4>
 
 ---
@@ -25,7 +25,7 @@ Tabela de conteúdos
 
 ## 💻 Sobre o projeto
 
-Desafio do processo seletivo da Telcomanager que consiste em desenvolver um aplicativo em React Native que exibirá uma lista de alarmes recuperados via API.
+Este projeto faz parte do processo seletivo da Telcomanager, que consiste em desenvolver um aplicativo em React Native que exibirá uma lista de alarmes recuperados via API.
 
 ---
 
@@ -64,7 +64,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
- <img style="border-radius: 100%;" src="https://avatars1.githubusercontent.com/u/62818671?s=460&u=649c624e53a72fa2ae9b735bb84c9214e7533c5e&v=4" width="100px;" alt=""/>
+ <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/62818671?s=460&u=649c624e53a72fa2ae9b735bb84c9214e7533c5e&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Feito com ❤️ por Renan Carlos</b></sub>
  <br />
