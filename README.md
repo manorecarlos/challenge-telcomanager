@@ -45,7 +45,7 @@ Rodando a aplicação mobile
 # Faça um clone do repositório abaixo
 https://github.com/manorecarlos/challenge-telcomanager.git
 
-# Acesse a pasta alarmanager
+# Abra o terminal e acesse a pasta alarmanager
 cd challenge-telcomanager\alarmanager
 
 # Instale as dependências
