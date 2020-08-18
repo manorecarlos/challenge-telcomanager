@@ -52,7 +52,7 @@ $ npm run start
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### []**Mobile**  ([React Native)](http://www.reactnative.com/)
+#### **Mobile** ([React Native)](http://www.reactnative.com/)
 
 -   **[React Navigation](https://reactnavigation.org/)**
 -   **[React Native SVG](https://github.com/react-native-community/react-native-svg)**
@@ -64,7 +64,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
- <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/62818671?s=460&u=649c624e53a72fa2ae9b735bb84c9214e7533c5e&v=4" width="100px;" alt=""/>
+ <img style="border-radius: 100%;" src="https://avatars1.githubusercontent.com/u/62818671?s=460&u=649c624e53a72fa2ae9b735bb84c9214e7533c5e&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Feito com ❤️ por Renan Carlos</b></sub>
  <br />
