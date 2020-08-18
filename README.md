@@ -20,7 +20,7 @@ Tabela de conteúdos
      * [Pré-requisitos](#pré-requisitos)
      * [Rodando a aplicação mobile](#user-content--rodando-a-aplicação-mobile)
    * [Tecnologias](#-tecnologias)
-     * [React Native](#user-content-mobile--react-native----typescript)
+     * [React Native](#user-content-mobile--react-native)
 <!--te-->
 
 ## 💻 Sobre o projeto
@@ -35,14 +35,14 @@ Rodando a aplicação mobile
 
 ```bash
 
-# Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
-
 # Instale as dependências
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
+# Para executar a aplicação em um dispositivo Android
+$ react-native run-android
+
+# Para executar a aplicação em um dispositivo iOS
+$ react-native run-ios
 
 ```
 
@@ -56,9 +56,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   **[React Navigation](https://reactnavigation.org/)**
 -   **[React Native SVG](https://github.com/react-native-community/react-native-svg)**
+-   **[React Native Chart Kit](https://github.com/indiespirit/react-native-chart-kit)**
 -   **[Axios](https://github.com/axios/axios)**
+-   **[Designer Mocky](https://designer.mocky.io/design)**
 
-> Veja o arquivo [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/mobile/package.json)
+> Veja o arquivo [package.json](https://github.com/manorecarlos/challenge-telcomanager/tree/master/alarmanager/package.json)
 
 ---
 
