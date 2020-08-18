@@ -17,10 +17,7 @@ Tabela de conteúdos
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
    * [Como executar o projeto](#-como-executar-o-projeto)
-     * [Pré-requisitos](#pré-requisitos)
-     * [Rodando a aplicação mobile](#user-content--rodando-a-aplicação-mobile)
    * [Tecnologias](#-tecnologias)
-     * [React Native](#user-content-mobile--react-native)
 <!--te-->
 
 ## 💻 Sobre o projeto
@@ -57,7 +54,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[React Navigation](https://reactnavigation.org/)**
 -   **[React Native SVG](https://github.com/react-native-community/react-native-svg)**
 -   **[React Native Chart Kit](https://github.com/indiespirit/react-native-chart-kit)**
--   **[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)**
 -   **[Axios](https://github.com/axios/axios)**
 -   **[Designer Mocky](https://designer.mocky.io/design)**
 
